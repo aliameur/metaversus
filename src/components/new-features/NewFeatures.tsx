@@ -20,7 +20,11 @@ export const NewFeatures = ({ imgUrl, title, subtitle }: NewFeaturesProps) => (
         className="h-1/2 w-1/2 object-contain"
       />
     </div>
-      <h1 className='mt-[26px] bold text-[24px] leading-[30px] text-white'>Title {title}</h1>
-        <p className='flex-1 mt-4 font-normal text-[18px] leading-[32px] text-[#b0b0b0]'>{subtitle}</p>
+    <h1 className="bold mt-[26px] text-[24px] leading-[30px] text-white">
+      Title {title}
+    </h1>
+    <p className="mt-4 flex-1 text-[18px] font-normal leading-[32px] text-[#b0b0b0]">
+      {subtitle}
+    </p>
   </div>
 );

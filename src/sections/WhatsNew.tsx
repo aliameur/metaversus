@@ -11,7 +11,7 @@ import { newFeatures } from "@/config/data";
 const WhatsNew = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
-      variants={staggerContainer}
+      variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
@@ -24,9 +24,9 @@ const WhatsNew = () => (
         <TypingText title="| What's New?" />
         <TitleText title={<>What&apos;s new about Metaversus?</>} />
         <div className="mt-12 flex flex-wrap justify-between gap-6 ">
-        {newFeatures.map(feature => (
-          <NewFeatures key={feature.title} {...feature} />
-        ))}
+          {newFeatures.map((feature) => (
+            <NewFeatures key={feature.title} {...feature} />
+          ))}
         </div>
       </motion.div>
       <motion.div

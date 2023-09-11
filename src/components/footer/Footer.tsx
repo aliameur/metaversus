@@ -3,12 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "@/config/styles";
-import {
-  fadeIn,
-  staggerContainer,
-  zoomIn,
-  footerVariants,
-} from "@/config/motion";
+import { footerVariants } from "@/config/motion";
 import { socials } from "@/config/data";
 
 export const Footer = () => (

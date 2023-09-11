@@ -43,15 +43,12 @@ export const slideIn = (
   },
 });
 
-export const staggerContainer = (
-  staggerChildren: any,
-  delayChildren: any,
-): Variants => ({
+export const staggerContainer = (): Variants => ({
   hidden: {},
   show: {
     transition: {
-      staggerChildren,
-      delayChildren,
+      staggerChildren: 0.3,
+      delayChildren: 0.5,
     },
   },
 });
