@@ -105,3 +105,12 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+
+.triangle {
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 40px solid red;
+      border-radius: 50%;
+    }
